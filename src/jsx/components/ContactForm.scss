@@ -36,20 +36,3 @@
 .submit {
   @include grid-column;
 }
-
-.success {
-  $color: #f1f8e9;
-  cursor: auto;
-  width: 100%;
-  color: $color;
-  background-color: $success-color;
-
-  &:focus, &:hover, &:disabled {
-    color: $color;
-    background-color: $success-color;
-  }
-}
-
-.error {
-  color: $error-color;
-}

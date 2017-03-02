@@ -2,64 +2,9 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 
 import style from './ContactForm.scss';
-
-class SendButton extends Component {
-  constructor(props) {
-    super(props);
-
-    this.getIconClasses = this.getIconClasses.bind(this);
-  }
-
-  getIconClasses() {
-    if (this.props.processing) {
-      return 'fa fa-cog fa-spin';
-    } else {
-      return 'fa fa-paper-plane-o';
-    }
-  }
-
-  render() {
-    if (this.props.visible) {
-      return (
-        <button disabled={this.props.processing} type="submit">
-          Send <i className={this.getIconClasses()} />
-        </button>
-      );
-    } else {
-      return null;
-    }
-  }
-}
-
-class SubmissionFailed extends Component {
-  render() {
-    if (this.props.visible) {
-      return (
-        <div>
-          <p className={style.error}>Failed to communicate with the server, please try again later.</p>
-
-          <p>If the issue persists, please message me on <a href="https://twitter.com/voxeldavid">Twitter</a> and I'll get to the bottom of it.</p>
-        </div>
-      );
-    } else {
-      return null;
-    }
-  }
-}
-
-class SuccessButton extends Component {
-  render() {
-    if (this.props.visible) {
-      return (
-        <button disabled className={style.success}>
-          Success! Your message has been sent, thank you! <i className="fa fa-heart" />
-        </button>
-      );
-    } else {
-      return null;
-    }
-  }
-}
+import SendButton from './forms/SendButton';
+import SuccessButton from './forms/SuccessButton';
+import SubmissionFailed from './forms/SubmissionFailed';
 
 export default class ContactForm extends Component {
   constructor(props) {
