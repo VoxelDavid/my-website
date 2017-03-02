@@ -31,7 +31,7 @@ class SendButton extends Component {
   }
 }
 
-class SendFailed extends Component {
+class SubmissionFailed extends Component {
   render() {
     if (this.props.visible) {
       return (
@@ -190,7 +190,7 @@ export default class ContactForm extends Component {
 
           <SuccessButton visible={this.state.sent} />
 
-          <SendFailed visible={this.state.sendFailed} />
+          <SubmissionFailed visible={this.state.sendFailed} />
         </div>
       </form>
     );
