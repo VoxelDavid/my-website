@@ -13,9 +13,9 @@ ReactDOM.render((
   <Router history={browserHistory} render={applyRouterMiddleware(useScroll())}>
     <Route path='/' component={App}>
       <IndexRoute component={Home} />
-      <Route path='/about' component={About} />
-      <Route path='/contact' component={Contact} />
-      <Route path='/projects/:projectSlug' component={Project} />
+      <Route path='about' component={About} />
+      <Route path='contact' component={Contact} />
+      <Route path='projects/:projectSlug' component={Project} />
     </Route>
   </Router>
 ), document.getElementById('root'));
