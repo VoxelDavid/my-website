@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Portfolio from 'jsx/components/Portfolio';
-import Intro from 'jsx/components/Intro';
+import Portfolio from 'jsx/components/content/Portfolio';
+import Intro from 'jsx/components/content/Intro';
 
 export default class Home extends Component {
   render() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import styles from './Footer.scss';
-import Copyright from './Copyright';
+import Copyright from './content/Copyright';
 
 export default class Footer extends Component {
   render() {

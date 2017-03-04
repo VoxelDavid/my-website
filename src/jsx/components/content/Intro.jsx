@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 
 import links from 'css/components/_links.scss';
-import { Section, Content, Title } from './layout';
+import { Section, Content, Title } from '../layout';
 
 export default class Intro extends Component {
   render() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import { Section, Content, Title } from './layout';
-import ProjectTile from './project/ProjectTile';
+import { Section, Content, Title } from '../layout';
+import ProjectTile from '../project/ProjectTile';
 import projects from 'jsx/routes/projects';
 
 export default class Portfolio extends Component {
