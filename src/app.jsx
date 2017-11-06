@@ -1,3 +1,6 @@
+import './css/main.scss';
+import './css/vendor.scss';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute,  browserHistory, applyRouterMiddleware } from 'react-router';

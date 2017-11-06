@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-import { Section, Content, Title } from 'jsx/components/layout';
+import { Section, Content, Title } from 'components/layout';
 import ProjectGallery from './ProjectGallery';
 
 export default class ProjectPage extends Component {

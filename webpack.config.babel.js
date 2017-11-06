@@ -8,7 +8,7 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
 
   entry: {
-    main: 'app.js',
+    main: 'app.jsx',
     vendor: [ 'react', 'react-dom', 'react-router' ]
   },
 

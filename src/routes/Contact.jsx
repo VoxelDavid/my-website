@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import { Section, Content, Title } from 'jsx/components/layout';
-import ContactForm from 'jsx/components/ContactForm';
+import { Section, Content, Title } from 'components/layout';
+import ContactForm from 'components/ContactForm';
 
 export default class About extends Component {
   render() {

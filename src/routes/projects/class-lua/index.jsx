@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Content from 'jsx/components/layout/Content';
-import Title from 'jsx/components/layout/Title';
+import Content from 'components/layout/Content';
+import Title from 'components/layout/Title';
 
 export default {
   name: 'Class.lua',
