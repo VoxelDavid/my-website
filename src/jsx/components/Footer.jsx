@@ -9,7 +9,6 @@ export default class Footer extends Component {
       <footer className={styles.base}>
         <ul className={styles.nav}>
           <li><Copyright /></li>
-          <li><a href="https://github.com/vocksel/my-website">Website Source</a></li>
         </ul>
       </footer>
     );
