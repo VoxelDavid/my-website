@@ -11,12 +11,6 @@ ReactDOM.render((
     <Route path='/' component={App}>
       <IndexRoute component={Home} />
 
-      <Route path='about' getComponent={(nextState, cb) => {
-        require.ensure(['moment'], require => {
-          cb(null, require('./routes/About').default);
-        });
-      }} />
-
       <Route path='contact' getComponent={(nextState, cb) => {
         require.ensure(['jquery'], require => {
           cb(null, require('./routes/Contact').default);
