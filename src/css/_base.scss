@@ -36,10 +36,11 @@ section, button {
 // =============================================================================
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $sans-font-stack;
-  font-weight: normal;
+  font-family: $header-font-stack;
+  font-weight: bold;
   color: $header-color;
   display: inline-block;
+  margin-bottom :$inuit-global-spacing-unit;
 }
 
 
