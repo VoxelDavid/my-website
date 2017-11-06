@@ -10,6 +10,11 @@ $link-color: #09b6ef;
 $success-color: #8bc34a;
 $error-color: #f44336;
 
+$action-button: (
+  text: #fff2fb,
+  bg: #ef09b6
+);
+
 // These are used for setting the color of links/icons for different websites.
 $brand-colors: (
   twitter: #1da1f2,

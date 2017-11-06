@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import ProjectPage from 'components/project/ProjectPage';
-import projects from './projects';
+import projects from '../projects';
 
 function getProjectBySlug(slug) {
   return projects.find(project => project.slug === slug);
