@@ -1,0 +1,10 @@
+@import "~bourbon-neat/core/neat";
+@import "src/css/settings/_grid.scss";
+
+.base {
+  display: none;
+
+  @include grid-media($neat-grid) {
+    display: inline-block;
+  }
+}
