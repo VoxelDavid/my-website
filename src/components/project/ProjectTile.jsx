@@ -3,15 +3,13 @@ import { Link } from 'react-router';
 
 import styles from './ProjectTile.scss';
 import { Content } from '../layout';
-import ProjectPreview from './ProjectPreview';
 
 export default class ProjectTile extends Component {
   render() {
     return (
-      <Content half className={styles.base}>
+      <Content className={styles.base}>
         <Link to={`/projects/${this.props.slug}`}>
-          <ProjectPreview name={this.props.name} image={this.props.image}
-            released={this.props.released} />
+          <div className={styles.image} style={{ backgroundImage: `url(${this.props.image})` }} />
         </Link>
       </Content>
     );
@@ -19,8 +17,8 @@ export default class ProjectTile extends Component {
 }
 
 ProjectTile.propTypes = {
-  name: PropTypes.string.isRequired,
-  released: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  shortBio: PropTypes.element.isRequired,
   slug: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired
 };

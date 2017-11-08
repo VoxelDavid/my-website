@@ -1,5 +1,22 @@
 @import "~inuitcss/settings/settings.core";
+@import "~bourbon-neat/core/neat";
+
+@import "src/css/settings/_colors.scss";
+@import "src/css/settings/_global.scss";
+@import "src/css/settings/_grid.scss";
 
 .base {
+  box-shadow: $box-shadow;
   margin-bottom: $inuit-global-spacing-unit;
+  @include grid-column(1 of 3);
+
+  @include grid-media($neat-grid) {
+    height: $inuit-global-spacing-unit-huge*2.5;
+  }
+}
+
+.image {
+  background: no-repeat center center;
+  background-size: cover;
+  height: 100%;
 }
