@@ -1,18 +1,21 @@
 @import "~inuitcss/settings/settings.core";
+@import "src/css/settings/_global.scss";
 @import "src/css/settings/_colors.scss";
 
-.base {
-  $color: map-get($action-button, text);
-  $hover: lighten($color, 20);
-  $bg-color: map-get($action-button, bg);
+$color: map-get($action-button, text);
+$hover: lighten($color, 20);
+$bg-color: map-get($action-button, bg);
 
-  margin-top: $inuit-global-spacing-unit;
+.base {
   background-color: $bg-color;
   color: $color;
   font-weight: bold;
   display: inline-block;
 
+  margin-top: $inuit-global-spacing-unit;
   padding: $inuit-global-spacing-unit/2.5 $inuit-global-spacing-unit;
+
+  box-shadow: $box-shadow;
 
   &:hover {
     color: $hover;
