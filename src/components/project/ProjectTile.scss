@@ -6,13 +6,28 @@
 @import "src/css/settings/_grid.scss";
 
 .base {
-  box-shadow: $box-shadow;
+  @include grid-collapse;
+
+  // box-shadow: $box-shadow;
   margin-bottom: $inuit-global-spacing-unit;
-  @include grid-column(1 of 3);
 
   @include grid-media($neat-grid) {
-    height: $inuit-global-spacing-unit-huge*2.5;
+    height: $inuit-global-spacing-unit-huge*4;
   }
+}
+
+.bio {
+  @include grid-column(1 of 3);
+}
+
+.preview {
+  @include grid-column(2 of 3);
+  height: 100%;
+  border-bottom: 0;
+}
+
+.view {
+  float: right;
 }
 
 .image {

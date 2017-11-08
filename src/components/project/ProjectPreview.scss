@@ -5,13 +5,9 @@
 
 .image {
   width: 100%;
+  height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: $inuit-global-spacing-unit-large*4;
   box-shadow: $box-shadow;
-
-  @include grid-media($neat-grid) {
-    height: $inuit-global-spacing-unit-large*5;
-  }
 }
