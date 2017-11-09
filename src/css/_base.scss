@@ -23,11 +23,11 @@ html {
 
 body {
   background-color: $background-color;
-  padding: $inuit-global-spacing-unit-large 0;
+  padding-bottom: $inuit-global-spacing-unit-large;
 }
 
 section, button {
-  margin-bottom: $inuit-global-spacing-unit-large*3;
+  margin-bottom: $inuit-global-spacing-unit-large;
 }
 
 
