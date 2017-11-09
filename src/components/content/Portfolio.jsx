@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import { Section, Content, Title } from '../layout';
+import { Content, Title } from '../layout';
+import Container from '../layout/Container';
 import ProjectTile from '../project/ProjectTile';
 import projects from 'projects';
 
@@ -16,13 +17,13 @@ export default class Portfolio extends Component {
     const tiles = this.getProjectTiles();
 
     return (
-      <Section>
+      <Container>
         <Content>
           <Title>Selected work</Title>
         </Content>
 
         {tiles}
-      </Section>
+      </Container>
     );
   }
 }

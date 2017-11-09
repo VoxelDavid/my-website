@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { Section, Content, Title } from 'components/layout';
+import { Content, Title } from 'components/layout';
+import Container from 'components/layout/Container';
 import ProjectGallery from './ProjectGallery';
 
 export default class ProjectPage extends Component {
   render() {
     return (
       <div>
-        <Section>
+        <Container>
           <Content>
             <Title>{this.props.name}</Title>
 
             <ProjectGallery images={this.props.images} />
           </Content>
-        </Section>
+        </Container>
 
-        <Section>
+        <Container>
           <Content reduced>
             <Title>Description</Title>
 
@@ -32,7 +33,7 @@ export default class ProjectPage extends Component {
               { this.props.link  && <li><i className="fa fa-link" /> {this.props.link}</li> }
             </ul>
           </Content>
-        </Section>
+        </Container>
       </div>
     );
   }
