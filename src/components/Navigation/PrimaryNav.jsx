@@ -15,7 +15,8 @@ export default class PrimaryNav extends Component {
     return (
       <nav className={styles.primaryNav}>
         <NavGroup className={styles.group}>
-          <NavLink onlyActiveOnIndex={true} to="/">Portfolio</NavLink>
+          <NavLink onlyActiveOnIndex={true} to="/">Home</NavLink>
+          <NavLink to="/projects">Projects</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </NavGroup>
       </nav>
