@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import { Content, Title } from '../layout';
 import Container from '../layout/Container';
 import ProjectTile from '../project/ProjectTile';
 
@@ -27,10 +26,6 @@ export default class Portfolio extends Component {
   render() {
     return (
       <Container>
-        <Content>
-          <Title>Selected work</Title>
-        </Content>
-
         {this.getProjectTiles()}
       </Container>
     );
