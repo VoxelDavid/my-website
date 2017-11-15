@@ -3,9 +3,9 @@
 //   ======================================================================== */
 // Setting variables for all the colors we use across the site.
 
-$background-color: #fcfcfc;
-$header-color: #39394c;
-$text-color: #5a5a67;
+$background-color: #fff;
+$header-color: #202020;
+$text-color: $header-color;
 $link-color: #09b6ef;
 $success-color: #8bc34a;
 $error-color: #f44336;
