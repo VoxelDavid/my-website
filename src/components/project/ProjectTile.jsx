@@ -16,22 +16,34 @@ export default class ProjectTile extends Component {
   }
 
   render() {
+    const bio = (
+      <div className={styles.bio}>
+        <h2>{this.props.title}</h2>
+
+        {this.getShortBio()}
+
+        <Link to={`/projects/${this.props.slug}`}>
+          <ActionButton>View Project</ActionButton>
+        </Link>
+      </div>
+    );
+
+    const preview = (
+      <Link to={`/projects/${this.props.slug}`} className={styles.preview}>
+        <ProjectPreview image={this.props.image} />
+      </Link>
+    );
+
+    let elements = [ bio, preview ];
+
+    if (this.props.inverted) {
+      elements = elements.reverse();
+    }
+
     return (
       <Content>
         <div className={styles.base}>
-          <div className={styles.bio}>
-            <h2>{this.props.title}</h2>
-
-            {this.getShortBio()}
-
-            <Link to={`/projects/${this.props.slug}`}>
-              <ActionButton>View Project</ActionButton>
-            </Link>
-          </div>
-
-          <Link to={`/projects/${this.props.slug}`} className={styles.preview}>
-            <ProjectPreview image={this.props.image} />
-          </Link>
+          {elements.map(element => element )}
         </div>
       </Content>
     );
