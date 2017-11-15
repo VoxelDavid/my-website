@@ -32,14 +32,10 @@ export default class ProjectTile extends Component {
       </Link>
     ];
 
-    if (this.props.inverted) {
-      elements = elements.reverse();
-    }
-
     return (
       <Content>
         <div className={styles.base}>
-          {elements}
+          {this.props.inverted ? elements.reverse() : elements}
         </div>
       </Content>
     );
