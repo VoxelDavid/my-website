@@ -2,26 +2,16 @@
 @import "~inuitcss/tools/tools.font-size";
 @import "~bourbon-neat/core/neat";
 
-.bg {
-  background: url(img/masthead.png) no-repeat center center;
-  background-size: cover;
-}
-
 .base {
-  composes: bg;
-  padding: $inuit-global-spacing-unit-huge*2.5 0;
-  box-shadow: inset 0 -15px 20px rgba(#222, .2);
-  margin-bottom: $inuit-global-spacing-unit-large;
+  padding: 20vh 0;
 }
 
+.intro {
+  @include grid-column(2 of 3);
+}
 
 .bio {
-  $color: #eaeaea;
-
-  @include inuit-font-size(26px);
-  @include grid-column(2 of 3);
-
-  color: $color;
-  text-shadow: 0 0 8px darken($color, 70);
-  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: $inuit-global-spacing-unit-large;
 }
