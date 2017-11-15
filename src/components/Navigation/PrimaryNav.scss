@@ -8,10 +8,10 @@
   li {
     display: inline-block;
     list-style-type: none;
-    padding-right: $inuit-global-spacing-unit;
+    margin-right: $inuit-global-spacing-unit-large;
 
     &:last-of-type {
-      padding-right: 0;
+      margin-right: 0;
     }
   }
 }
