@@ -16,7 +16,7 @@ export default class ProjectTile extends Component {
   }
 
   render() {
-    const bio = (
+    let elements = [
       <div className={styles.bio}>
         <h2>{this.props.title}</h2>
 
@@ -25,16 +25,12 @@ export default class ProjectTile extends Component {
         <Link to={`/projects/${this.props.slug}`}>
           <ActionButton>View Project</ActionButton>
         </Link>
-      </div>
-    );
+      </div>,
 
-    const preview = (
       <Link to={`/projects/${this.props.slug}`} className={styles.preview}>
         <ProjectPreview image={this.props.image} />
       </Link>
-    );
-
-    let elements = [ bio, preview ];
+    ];
 
     if (this.props.inverted) {
       elements = elements.reverse();
@@ -43,7 +39,7 @@ export default class ProjectTile extends Component {
     return (
       <Content>
         <div className={styles.base}>
-          {elements.map(element => element )}
+          {elements}
         </div>
       </Content>
     );
