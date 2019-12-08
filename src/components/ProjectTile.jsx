@@ -16,6 +16,20 @@ export default class ProjectTile extends React.Component {
 		})
 	};
 
+	getMedia(project) {
+		if (project.video) {
+			return (
+				<video className={style.video} loop muted controls={false} autoplay='autoplay'>
+					<source src={project.video} type='video/webm' />
+				</video>
+			);
+		} else {
+			return (
+				<img className={style.image} src={project.thumbnail} />
+			);
+		}
+	}
+
 	render() {
 		const { project } = this.props;
 
@@ -26,7 +40,7 @@ export default class ProjectTile extends React.Component {
 						<div className={style.border}></div>
 
 						<div className={style.display}>
-							<img className={style.image} src={project.thumbnail} />
+							{this.getMedia(project)}
 
 							<div className={style.caption}>
 								<h2 className={style.title}>{project.title}</h2>

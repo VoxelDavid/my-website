@@ -1,6 +1,7 @@
 import React from 'react';
 import { ProjectType } from 'types';
 import thumbnail from './thumbnail.jpg';
+import video from './aquaman.mp4';
 
 export default {
 	title: 'Aquaman',
@@ -10,6 +11,7 @@ export default {
 	releaseDate: new Date(2018, 10),
 	type: ProjectType.Game,
 	thumbnail: thumbnail,
+	video: video,
 	url: 'https://www.roblox.com/games/2056459358/City-of-Rolantis',
 	description: (
 		<React.Fragment>

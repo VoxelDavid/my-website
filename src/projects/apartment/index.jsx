@@ -3,6 +3,7 @@ import { ProjectType } from 'types';
 import thumbnail from './images/living-room.jpg';
 import bedroom from './images/bedroom.jpg';
 import outside from './images/outside.jpg';
+import video from './rhinebeck.mp4';
 
 export default {
 	title: 'Rhinebeck',
@@ -11,6 +12,7 @@ export default {
 	releaseDate: new Date(2016, 0),
 	type: ProjectType.Game,
 	thumbnail: thumbnail,
+	video: video,
 	url: 'https://www.roblox.com/games/343113123/Rhinebeck',
 	description: (
 		<div>

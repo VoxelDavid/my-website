@@ -43,6 +43,12 @@
 	z-index: -1;
 }
 
+.video {
+	object-fit: cover;
+	height: 100%;
+	display: block;
+}
+
 .image {
 	object-fit: cover;
 	margin-block-end: 0;
